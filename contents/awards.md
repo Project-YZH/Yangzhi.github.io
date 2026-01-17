@@ -16,6 +16,8 @@
 ③ 服务器根据分析结果进行静态插桩，仅在潜在泄露路径的起始、结束及关键分支处插入轻量级监控代码，随后将应用重打包并返回给客户端，将其转化为具备策略执行能力的安全应用。
 ④ 用户在移动端运行经安全增强的应用，系统基于下推自动机（Pushdown Automaton）在运行时高效监控路径状态的变化（包括智能处理循环结构的传播与稳定期），一旦检测到完整的隐私泄露路径形成，即动态阻止信息的泄露。
 
+
+
 <div class="ratio ratio-16x9 my-3">
   <video controls playsinline preload="metadata">
     <source src="static/assets/video/static-control.mp4" type="video/mp4" />
