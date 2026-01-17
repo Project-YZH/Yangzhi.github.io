@@ -1,16 +1,19 @@
-#### Submitted
+## 动态控制（Dynamic Control）
 
-- <strong>S. Li</strong>*, X. Yang, S. M. Mousavi, A. Cao, K. Fan, Y. Liu, C. Wang, and Q. Niu. Learning Earthquake Wave Arrival Time Picking from Labels with Inaccuracies. <strong>Under Review</strong> [[Code]](https://github.com/senli1073/LaNCor)
+隐私保护-动态信息流跟踪与控制
+组成：Android虚拟机，动态信息流控制框架FCDroid，word演示文档
 
-#### Published
+目的：通过动态信息流跟踪框架对标定的文件信息流进行简单识别和保护，无论是文档级别还是文件内容级别，一旦发现有敏感信息离开系统，则对当前的程序进程进行中止并在通知栏作出拦截通知。
 
-- X. Yang, <strong>S. Li</strong>, A. Cao*, C. Wang*, Y. Liu, X. Bai, and Q. Niu (2024). Deep Transfer Learning for P-wave Arrival Identification and Automatic Seismic Source Location in Underground Mines. <strong>International Journal of Rock Mechanics and Mining Sciences</strong>. [[Paper]](https://doi.org/10.1016/j.ijrmms.2024.105888)
+操作流程：①在如视频所示的虚拟机中，我们首先点击运行FCDroid，在弹出的界面中我们选择开始监听，此时系统开始对事先进行过标记的文件数据流进行监控。
+②接下来，我们对一份秘密文档进行发送测试。打开文档，选择文档中的一段文字，选择分享，试图通过短信发送，选择好联系人，点击发送按钮，则短信内容被禁止离开系统，短信程序也被迫退出，打开通知栏可以查看被拦截的信息：包括应用程序名、目的地址、数据类型和内容等信息。
+③再次通过文件管理器，找到data目录下的secret文档，并选择通过电子邮件发送，则邮件程序被拒绝并退出，打开通知栏可以看到详细的拦截信息。
+④可以看到无论是对于文件级别还是对于文件的内容，我们的动态污点跟踪框架对于被标记的敏感信息都进行了有效的保护。
 
-- <strong>S. Li</strong>, X. Yang*, A. Cao*, C. Wang, Y. Liu, Y. Liu, and Q. Niu (2024). SeisT: A Foundational Deep-Learning Model for Earthquake Monitoring Tasks. <strong>IEEE Transactions on Geoscience and Remote Sensing</strong>. [[Paper]](https://doi.org/10.1109/TGRS.2024.3371503) [[Code]](https://github.com/senli1073/SeisT)
-
-- A. Cao, X. Yang, C. Wang*, <strong>S. Li</strong>, Y. Liu, L. Dou, and Q. Niu (2023). High-Precision Phase Picking and Automatic Source Locating Method for Seismicity in Mines Based on Deep Transfer Learning. <strong>Journal of China Coal Society</strong>. [[Paper]](https://doi.org/10.13225/j.cnki.jccs.2023.0095)
-
-- A. Cao, Y. Liu, X. Yang*, <strong>S. Li</strong>, C. Wang, X. Bai, and Y. Liu (2022). Physical Index and Data Fusion-Driven Method for Coal Burst Prediction in Time Sequence. <strong>Journal of China Coal Society</strong>. [[Paper]](https://doi.org/10.13225/j.cnki.jccs.2022.0680)
-
-- X. Yang, X. Yu, C. Zhang, <strong>S. Li</strong>, and Q. Niu (2021). MineGPS: Battery-Free Localization Base Station for Coal Mine Environment. <strong>IEEE Communications Letters</strong>. [[Paper]](https://doi.org/10.1109/LCOMM.2021.3081593)
+<div class="ratio ratio-16x9 my-3">
+  <video controls playsinline preload="metadata">
+    <source src="static/assets/video/dynamic-control.mp4" type="video/mp4" />
+    你的浏览器不支持 MP4 视频播放。
+  </video>
+</div>
 
